@@ -14,7 +14,10 @@
   "keywords": [
     "visible",
     "js",
-    "es6"
+    "es6",
+    "viewport",
+    "scroll",
+    "hidden"
   ],
   "author": "Miguel Molina <hi@mvader.me>",
   "license": "MIT",
