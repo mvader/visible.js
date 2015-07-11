@@ -5,23 +5,19 @@ var webpack = require('webpack');
 
 module.exports = {
 	entry: SOURCE_FOLDER + '/visible.js',
+	target: 'web',
 	output: {
+		library: 'visible',
 		path: DIST_FOLDER,
 		filename: BUNDLE_NAME,
 		publicPath: '/'
 	},
-  plugins: [
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false
-      },
+	externals: [
+		{
+			visible: "visible"
+		}
+	],
 
-      output: {
-        comments: false,
-        semicolons: true
-      }
-    })
-  ],
 	module: {
 		loaders: [
 			{ test: /\.(js|jsx)$/, exclude: /(bower_components|node_modules)/, loader: 'babel-loader' }
