@@ -18,6 +18,18 @@ module.exports = {
 		}
 	],
 
+	plugins: [
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false
+      },
+      output: {
+        comments: false,
+        semicolons: true
+      }
+    })
+  ],
+
 	module: {
 		loaders: [
 			{ test: /\.(js|jsx)$/, exclude: /(bower_components|node_modules)/, loader: 'babel-loader' }
