@@ -1,13 +1,13 @@
 {
-  "name": "df-visible",
-  "version": "1.2.0",
-  "main": "jquery.visible.js",
-  "description": "Quickly check if an element is within the browsers visible viewport, regardless of scroll position. If a user can see this element, the function will return true.",
+  "name": "visible.js",
+  "version": "1.0.0",
+  "main": "src/visible.js",
+  "description": "Simple library with no dependencies to check if an element is visible on the current viewport.",
   "license": "MIT",
   "authors": [{
-	  "name"	: "Sam Sehnert",
-		"email"	: "sam@customd.com",
-		"homepage": "https://www.customd.com/articles/13/checking-if-an-element-is-visible-on-screen-using-jquery"
+	  "name"	: "Miguel Molina",
+		"email"	: "hi@mvader.me",
+		"homepage": "http://mvader.me"
 	}],
 	"keywords": [
 		"visible",
@@ -28,9 +28,6 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/customd/jquery-visible.git"
-  },
-  "dependencies": {
-    "jquery": ">1.6.0"
+    "url": "git://github.com/mvader/visible.js.git"
   }
 }
