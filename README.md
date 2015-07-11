@@ -3,6 +3,12 @@ visible.js [![Build Status](https://travis-ci.org/mvader/visible.js.svg)](https:
 
 Simple library with no dependencies to check if an element is visible on the current viewport.
 
+### Install
+
+```
+bower install visible.js
+```
+
 ### Usage
 ```javascript
 visible(document.getElementById('my-elem')); // Returns true if the element is visible!
